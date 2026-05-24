@@ -161,16 +161,22 @@
                 <div class="home-post-item-bottom border-box">
                     
                     <h3 class="home-post-title border-box">
-                        <a href="/2026/05/23/test/">
-                            测试文档
+                        <a href="/2026/05/24/reduce_sum/">
+                            Reduce Sum算子优化过程
                         </a>
                     </h3>
 
                     <div class="home-post-content keep-markdown-body">
                         
-                            hello world a
-a = b + c
+                            一般的reduce算子的设计
 
+
+把一个数组的数据, 分成若干块, 块的个数等于block的数目.
+每一个block内部, 在自己的shared memory上进行reduce.
+最后在block范围内进行reduce, 得到最终结果.
+
+例子:
+1...
                         
                     </div>
 
@@ -181,8 +187,8 @@ a = b + c
         
             <span class="meta-info-item border-box">
                 <i class="icon fa-solid fa-history"></i>&nbsp;<span class="home-post-history"
-                                                                                data-updated="Sat May 23 2026 11:48:12 GMT+0800"
-                >2026-05-23 11:48:12</span>
+                                                                                data-updated="Sun May 24 2026 16:50:55 GMT+0800"
+                >2026-05-24 16:50:55</span>
             </span>
         
 
@@ -199,7 +205,7 @@ a = b + c
     </div>
 
     
-        <a class="home-read-more" href="/2026/05/23/test/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
+        <a class="home-read-more" href="/2026/05/24/reduce_sum/">Read more&nbsp;<i class="icon fas fa-angle-right"></i></a>
     
 </div>
 
